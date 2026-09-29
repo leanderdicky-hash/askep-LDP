@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Asuhan Keperawatan LDP</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#eef5f8;--cd:#fff;--tx:#10303d;--mu:#5a7684;--pr:#0a7ea4;--p2:#12b5a0;--bd:#d3e2e9;--hl:#e3f4f6}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b171e;--cd:#132530;--tx:#e2f0f5;--mu:#8fa8b5;--pr:#3bbcec;--p2:#2dd4bf;--bd:#26414f;--hl:#173846}}
+:root[data-theme="dark"]{--bg:#0b171e;--cd:#132530;--tx:#e2f0f5;--mu:#8fa8b5;--pr:#3bbcec;--p2:#2dd4bf;--bd:#26414f;--hl:#173846}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;user-select:none;opacity:.07;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='230' height='170'%3E%3Ctext x='22' y='98' font-family='Georgia,serif' font-weight='700' font-size='44' fill='%230a7ea4' transform='rotate(-25 115 85)'%3ELDP%3C/text%3E%3C/svg%3E")}
+header,main,nav,footer{position:relative;z-index:1;max-width:760px;margin:0 auto}
+header{display:flex;align-items:center;gap:10px;padding:12px 14px}
+header svg{width:40px;height:40px;filter:drop-shadow(0 0 6px rgba(18,181,160,.55))}
+header h1{font:700 18px/1.2 Georgia,serif;margin:0;flex:1}
+header small{display:block;font:400 12px system-ui;color:var(--mu)}
+button{font:inherit;cursor:pointer;border:0;border-radius:10px;padding:10px 16px;color:#fff;background:linear-gradient(135deg,var(--pr),var(--p2));font-weight:600}
+button.g{background:transparent;color:var(--pr);border:1px solid var(--bd)}
+button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--pr);outline-offset:2px}
+nav{display:flex;gap:4px;padding:0 10px;overflow-x:auto}
+nav button{flex:1;min-width:64px;background:var(--cd);color:var(--mu);border:1px solid var(--bd);padding:6px 4px;font-size:11px;display:flex;flex-direction:column;align-items:center;gap:1px}
+nav button i{font:700 13px Georgia,serif}
+nav .on{background:linear-gradient(135deg,var(--pr),var(--p2));color:#fff;border-color:transparent}
+nav .dn{color:var(--pr)}
+main{padding:12px 14px 4px}
+.card{background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-bottom:12px}
+h2{font:700 20px/1.3 Georgia,serif;margin:0 0 8px}h3{font:700 16px Georgia,serif;margin:12px 0 6px}
+.mu{color:var(--mu);margin:0 0 8px}.lb{font-weight:600;margin:14px 0 4px;color:var(--pr)}
+label{display:block;font-weight:600;margin-bottom:10px}
+input,textarea,select{display:block;width:100%;margin-top:4px;padding:9px 10px;border:1px solid var(--bd);border-radius:9px;background:var(--bg);color:var(--tx);font:inherit;font-weight:400}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}
+.ck{display:flex;gap:9px;align-items:flex-start;font-weight:400;padding:6px 0;border-bottom:1px solid var(--bd)}
+.ck input{width:auto;margin:4px 0 0;flex:none}
+.dx{display:flex;gap:10px;justify-content:space-between;align-items:center;padding:12px;margin-bottom:8px;border:1px solid var(--bd);border-radius:12px;cursor:pointer}
+.dx small{display:block;color:var(--mu);font-size:12px}
+.dx.sel{border-color:var(--pr);background:var(--hl)}
+.pc{min-width:64px;text-align:right;font:700 14px Georgia,serif}.pc i{display:block;height:5px;margin-top:4px;border-radius:3px;background:linear-gradient(90deg,var(--pr),var(--p2))}
+.pes{background:var(--hl);border-left:4px solid var(--p2);padding:10px 12px;border-radius:8px;font-weight:600}
+code{background:var(--hl);padding:1px 6px;border-radius:5px;font-size:12px}
+pre{white-space:pre-wrap;word-break:break-word;font:13px/1.55 system-ui;margin:0}
+.btns{display:flex;justify-content:space-between;gap:8px;padding:4px 0 14px}
+footer{padding:6px 16px 22px;font-size:12px;color:var(--mu);text-align:center}
+#sp{position:fixed;inset:0;z-index:9;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:#08313f;transition:opacity .5s}
+#sp svg{width:96px;height:96px}
+#sp b{display:inline-block;font:800 54px Georgia,serif;opacity:0;animation:up .6s forwards;background:linear-gradient(100deg,#8be9dc 20%,#fff 45%,#8be9dc 70%);background-size:200%;-webkit-background-clip:text;background-clip:text;color:transparent}
+#sp b:nth-child(2){animation-delay:.25s}#sp b:nth-child(3){animation-delay:.5s}
+@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none;background-position:-100%}}
+@media(prefers-reduced-motion:reduce){#sp b{animation-duration:.01s}}
+@media print{header,nav,.no,#sp,footer{display:none!important}body{background:#fff;color:#000}body::before{opacity:.09}.card{border:0;padding:0}}
+</style></head><body>
+<div id="sp"><div id="lg2"></div><div><b>L</b><b>D</b><b>P</b></div></div>
+<header><span id="lg"></span><h1>Asuhan Keperawatan<small>SDKI, SLKI, SIKI, NANDA-I, SOAP</small></h1><button class="g no" onclick="th()" aria-label="Ganti tema">Tema</button></header>
+<nav id="nav" class="no"></nav>
+<main id="main"></main>
+<footer id="ft"></footer>
+<script>
+const BRAND={initials:"LDP",fullName:"",institution:""};
+const LOGO='<svg viewBox="0 0 48 48"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a7ea4"/><stop offset="1" stop-color="#14b8a6"/></linearGradient></defs><path d="M24 3 42 10v14c0 10-8 17-18 21C14 41 6 34 6 24V10z" fill="url(#g)" stroke="#8be9dc" stroke-width="1"/><text x="24" y="23" text-anchor="middle" font-size="12" font-weight="800" fill="#fff" font-family="Georgia,serif">LDP</text><polyline points="10,33 18,33 21,28 25,38 28,31 38,31" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+/* Data ringkas: verifikasi kode dan isi dengan buku standar PPNI / NANDA-I. Struktur: c kode, n nama, k kategori, nd NANDA-I, r risiko, e etiologi, mj mayor, mn minor, sl [kode,nama,kriteria], si [[kode,nama,tindakan]] */
+const D=[
+{c:"D.0077",n:"Nyeri Akut",k:"Psikologis, Nyeri dan Kenyamanan",nd:"Acute Pain (00132)",e:["agen pencedera fisiologis (mis. inflamasi, iskemia, neoplasma)","agen pencedera kimiawi (mis. bahan kimia iritan)","agen pencedera fisik (mis. abses, trauma, prosedur operasi)"],mj:["Mengeluh nyeri","Tampak meringis","Bersikap protektif","Gelisah","Frekuensi nadi meningkat","Sulit tidur"],mn:["Tekanan darah meningkat","Pola napas berubah","Nafsu makan berubah","Proses berpikir terganggu","Menarik diri","Berfokus pada diri sendiri","Diaforesis"],sl:["L.08066","Tingkat Nyeri",["Keluhan nyeri menurun","Meringis menurun","Sikap protektif menurun","Gelisah menurun","Frekuensi nadi membaik"]],si:[["I.08238","Manajemen Nyeri",["Identifikasi lokasi, karakteristik, durasi, frekuensi, kualitas, intensitas nyeri","Berikan teknik nonfarmakologis (kompres hangat/dingin, relaksasi napas dalam)","Kontrol lingkungan yang memperberat nyeri","Jelaskan penyebab, periode, dan pemicu nyeri","Kolaborasi pemberian analgesik, jika perlu"]]]},
+{c:"D.0001",n:"Bersihan Jalan Napas Tidak Efektif",k:"Fisiologis, Respirasi",nd:"Ineffective Airway Clearance (00031)",e:["spasme jalan napas","hipersekresi jalan napas","sekresi yang tertahan","benda asing dalam jalan napas","proses infeksi","disfungsi neuromuskuler"],mj:["Batuk tidak efektif","Tidak mampu batuk","Sputum berlebih","Mengi, wheezing dan/atau ronkhi kering"],mn:["Dispnea","Sulit bicara","Ortopnea","Gelisah","Sianosis","Bunyi napas menurun","Frekuensi napas berubah","Pola napas berubah"],sl:["L.01001","Bersihan Jalan Napas",["Batuk efektif meningkat","Produksi sputum menurun","Mengi menurun","Dispnea menurun","Frekuensi napas membaik"]],si:[["I.01011","Manajemen Jalan Napas",["Monitor pola napas, bunyi napas tambahan, dan sputum","Posisikan semi-Fowler atau Fowler","Berikan minum hangat","Lakukan penghisapan lendir jika perlu","Kolaborasi pemberian bronkodilator, ekspektoran, mukolitik"]],["I.01006","Latihan Batuk Efektif",["Identifikasi kemampuan batuk","Ajarkan tarik napas dalam lewat hidung 4 detik, tahan 2 detik, hembuskan 8 detik","Anjurkan batuk dengan kuat setelah napas dalam ke-3"]]]},
+{c:"D.0005",n:"Pola Napas Tidak Efektif",k:"Fisiologis, Respirasi",nd:"Ineffective Breathing Pattern (00032)",e:["depresi pusat pernapasan","hambatan upaya napas","deformitas dinding dada","nyeri","kelelahan otot pernapasan","gangguan neuromuskular"],mj:["Dispnea","Penggunaan otot bantu napas","Fase ekspirasi memanjang","Pola napas abnormal (takipnea, bradipnea, hiperventilasi)"],mn:["Ortopnea","Pernapasan pursed-lip","Pernapasan cuping hidung","Ventilasi semenit menurun","Kapasitas vital menurun","Ekskursi dada berubah"],sl:["L.01004","Pola Napas",["Dispnea menurun","Penggunaan otot bantu napas menurun","Frekuensi napas membaik","Kedalaman napas membaik"]],si:[["I.01014","Pemantauan Respirasi",["Monitor frekuensi, irama, kedalaman, dan upaya napas","Monitor saturasi oksigen","Atur interval pemantauan sesuai kondisi pasien","Jelaskan tujuan dan prosedur pemantauan"]]]},
+{c:"D.0130",n:"Hipertermia",k:"Lingkungan, Keamanan dan Proteksi",nd:"Hyperthermia (00007)",e:["dehidrasi","terpapar lingkungan panas","proses penyakit (mis. infeksi, kanker)","peningkatan laju metabolisme","respons trauma"],mj:["Suhu tubuh di atas nilai normal"],mn:["Kulit merah","Kejang","Takikardia","Takipnea","Kulit terasa hangat"],sl:["L.14134","Termoregulasi",["Menggigil menurun","Suhu tubuh membaik","Suhu kulit membaik","Kejang menurun"]],si:[["I.15506","Manajemen Hipertermia",["Identifikasi penyebab hipertermia","Monitor suhu tubuh","Longgarkan atau lepaskan pakaian","Berikan cairan oral","Lakukan pendinginan eksternal (kompres hangat)","Kolaborasi pemberian cairan dan elektrolit intravena, jika perlu"]]]},
+{c:"D.0023",n:"Hipovolemia",k:"Fisiologis, Nutrisi dan Cairan",nd:"Deficient Fluid Volume (00027)",e:["kehilangan cairan aktif","kegagalan mekanisme regulasi","peningkatan permeabilitas kapiler","kekurangan intake cairan","evaporasi"],mj:["Frekuensi nadi meningkat","Nadi teraba lemah","Tekanan darah menurun","Turgor kulit menurun","Membran mukosa kering","Volume urin menurun","Hematokrit meningkat"],mn:["Merasa lemah","Mengeluh haus","Status mental berubah","Suhu tubuh meningkat","Konsentrasi urin meningkat","Berat badan turun tiba-tiba"],sl:["L.03028","Status Cairan",["Kekuatan nadi meningkat","Turgor kulit meningkat","Output urin meningkat","Frekuensi nadi membaik","Tekanan darah membaik"]],si:[["I.03116","Manajemen Hipovolemia",["Periksa tanda dan gejala hipovolemia","Monitor intake dan output cairan","Anjurkan memperbanyak asupan cairan oral","Kolaborasi pemberian cairan IV isotonis, jika perlu"]]]},
+{c:"D.0142",n:"Risiko Infeksi",k:"Lingkungan, Keamanan dan Proteksi",nd:"Risk for Infection (00004)",r:1,e:[],mj:["Penyakit kronis (mis. diabetes melitus)","Efek prosedur invasif","Malnutrisi","Peningkatan paparan organisme patogen lingkungan","Kerusakan integritas kulit","Leukopenia atau imunosupresi"],mn:[],sl:["L.14137","Tingkat Infeksi",["Demam menurun","Kemerahan menurun","Nyeri menurun","Bengkak menurun","Kadar sel darah putih membaik"]],si:[["I.14539","Pencegahan Infeksi",["Monitor tanda dan gejala infeksi lokal dan sistemik","Batasi jumlah pengunjung","Cuci tangan sebelum dan sesudah kontak dengan pasien dan lingkungan","Pertahankan teknik aseptik pada pasien berisiko tinggi","Ajarkan cara mencuci tangan dengan benar","Kolaborasi pemberian imunisasi atau antibiotik, jika perlu"]]]},
+{c:"D.0019",n:"Defisit Nutrisi",k:"Fisiologis, Nutrisi dan Cairan",nd:"Imbalanced Nutrition: Less Than Body Requirements (00002), cek edisi NANDA-I terbaru",e:["ketidakmampuan menelan makanan","ketidakmampuan mencerna makanan","ketidakmampuan mengabsorbsi nutrien","peningkatan kebutuhan metabolisme","faktor ekonomi","faktor psikologis"],mj:["Berat badan menurun minimal 10% di bawah rentang ideal"],mn:["Cepat kenyang setelah makan","Kram atau nyeri abdomen","Nafsu makan menurun","Bising usus hiperaktif","Otot pengunyah lemah","Membran mukosa pucat","Sariawan","Serum albumin turun","Diare"],sl:["L.03030","Status Nutrisi",["Porsi makan yang dihabiskan meningkat","Berat badan membaik","Indeks massa tubuh membaik","Nafsu makan membaik"]],si:[["I.03119","Manajemen Nutrisi",["Identifikasi status nutrisi dan alergi makanan","Monitor asupan makanan dan berat badan","Sajikan makanan secara menarik dan suhu yang sesuai","Berikan makanan tinggi kalori dan tinggi protein","Kolaborasi dengan ahli gizi untuk menentukan jumlah kalori dan nutrien"]]]},
+{c:"D.0056",n:"Intoleransi Aktivitas",k:"Fisiologis, Aktivitas dan Istirahat",nd:"Activity Intolerance (00092)",e:["ketidakseimbangan antara suplai dan kebutuhan oksigen","tirah baring","kelemahan","imobilitas","gaya hidup monoton"],mj:["Mengeluh lelah","Frekuensi jantung meningkat >20% dari kondisi istirahat"],mn:["Dispnea saat atau setelah aktivitas","Merasa tidak nyaman setelah beraktivitas","Merasa lemah","Tekanan darah berubah >20% dari kondisi istirahat","EKG menunjukkan aritmia atau iskemia","Sianosis"],sl:["L.05047","Toleransi Aktivitas",["Frekuensi nadi meningkat","Keluhan lelah menurun","Dispnea saat aktivitas menurun","Kemudahan melakukan aktivitas sehari-hari meningkat"]],si:[["I.05178","Manajemen Energi",["Identifikasi gangguan fungsi tubuh yang mengakibatkan kelelahan","Monitor pola dan jam tidur","Sediakan lingkungan nyaman dan rendah stimulus","Lakukan latihan rentang gerak pasif dan/atau aktif","Anjurkan tirah baring dan aktivitas bertahap"]]]},
+{c:"D.0054",n:"Gangguan Mobilitas Fisik",k:"Fisiologis, Aktivitas dan Istirahat",nd:"Impaired Physical Mobility (00085)",e:["kerusakan integritas struktur tulang","penurunan kekuatan otot","penurunan massa otot","nyeri","kekakuan sendi","program pembatasan gerak","gangguan neuromuskular","kecemasan"],mj:["Mengeluh sulit menggerakkan ekstremitas","Kekuatan otot menurun","Rentang gerak (ROM) menurun"],mn:["Nyeri saat bergerak","Enggan melakukan pergerakan","Merasa cemas saat bergerak","Sendi kaku","Gerakan tidak terkoordinasi","Gerakan terbatas","Fisik lemah"],sl:["L.05042","Mobilitas Fisik",["Pergerakan ekstremitas meningkat","Kekuatan otot meningkat","Rentang gerak (ROM) meningkat","Nyeri menurun","Kaku sendi menurun"]],si:[["I.05173","Dukungan Mobilisasi",["Identifikasi adanya nyeri atau keluhan fisik lainnya","Monitor kondisi umum selama melakukan mobilisasi","Fasilitasi aktivitas mobilisasi dengan alat bantu (mis. pagar tempat tidur)","Libatkan keluarga untuk membantu pasien","Jelaskan tujuan dan prosedur mobilisasi","Ajarkan mobilisasi sederhana (duduk di tempat tidur, pindah ke kursi)"]]]},
+{c:"D.0080",n:"Ansietas",k:"Psikologis, Integritas Ego",nd:"Anxiety (00146)",e:["krisis situasional","kebutuhan tidak terpenuhi","ancaman terhadap konsep diri","ancaman terhadap kematian","kekhawatiran mengalami kegagalan","kurang terpapar informasi"],mj:["Merasa bingung","Merasa khawatir dengan akibat dari kondisi yang dihadapi","Sulit berkonsentrasi","Tampak gelisah","Tampak tegang","Sulit tidur"],mn:["Mengeluh pusing","Anoreksia","Palpitasi","Merasa tidak berdaya","Frekuensi napas meningkat","Frekuensi nadi meningkat","Tekanan darah meningkat","Diaforesis","Tremor","Muka tampak pucat","Suara bergetar","Kontak mata buruk"],sl:["L.09093","Tingkat Ansietas",["Verbalisasi kebingungan menurun","Verbalisasi khawatir akibat kondisi yang dihadapi menurun","Perilaku gelisah menurun","Perilaku tegang menurun","Frekuensi nadi membaik"]],si:[["I.09314","Reduksi Ansietas",["Identifikasi saat tingkat ansietas berubah","Temani pasien untuk mengurangi kecemasan","Pahami situasi yang membuat ansietas","Dengarkan dengan penuh perhatian","Latih teknik relaksasi","Anjurkan keluarga tetap bersama pasien"]]]}
+];
+const ST=["Pengkajian","Diagnosa","Luaran","Intervensi","SOAP","Ekspor"];
+let S={step:0,f:{},dx:-1,sg:[],et:"",ou:[],iv:[],so:{}};
+const $=s=>document.querySelector(s);
+const esc=t=>String(t==null?"":t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const save=()=>{try{localStorage.setItem("askep_ldp",JSON.stringify(S))}catch(e){}};
+const SW=new Set(["menurun","meningkat","tubuh","frekuensi","tampak","mengeluh","merasa","dengan","berubah","yang","dari","atau","tidak","pada","saat","nilai"]);
+const stems=t=>String(t).toLowerCase().split(/[^a-z]+/).filter(w=>w.length>3&&!SW.has(w)).map(w=>w.slice(0,5));
+function blob(){const f=S.f;let x=[f.kel,f.sub,f.obj].join(" ");const n=+f.n,r=+f.rr,h=+f.sh,s=+f.sp,td=(f.td||"").split("/").map(Number);
+if(h>37.5)x+=" suhu diatas normal hangat merah";
+if(r>24)x+=" takipnea napas abnormal";
+if(n>100)x+=" takikardia nadi";
+if(s&&s<95)x+=" sianosis dispnea";
+if(td[0]&&td[0]<90)x+=" tekanan darah";
+return new Set(stems(x))}
+function rank(){const b=blob();return D.map((d,i)=>{const a=[...d.mj,...d.mn];let m=0;a.forEach(s=>{if(stems(s).some(w=>b.has(w)))m++});return{i,p:Math.round(m/a.length*100)}}).sort((a,b)=>b.p-a.p)}
+function pes(){const d=D[S.dx];if(!d)return"";const s=S.sg.length?S.sg.join(", "):"…";
+return d.r?`${d.n} dibuktikan dengan ${s}`:`${d.n} berhubungan dengan ${S.et||"…"} dibuktikan dengan ${s}`}
+const inp=(k,l,t,ph)=>`<label>${l}<input type="${t||"text"}" value="${esc(S.f[k])}" placeholder="${ph||""}" oninput="S.f.${k}=this.value;save()"></label>`;
+const ta=(k,l,ph)=>`<label>${l}<textarea rows="3" placeholder="${ph}" oninput="S.f.${k}=this.value;save()">${esc(S.f[k])}</textarea></label>`;
+function v0(){return `<div class="card"><h2>Pengkajian</h2><p class="mu">Isi data pasien. Semakin lengkap, semakin tepat rekomendasi diagnosa.</p>
+<div class="g2">${inp("ini","Inisial pasien")}${inp("usia","Usia (tahun)","number")}</div>
+<label>Jenis kelamin<select onchange="S.f.jk=this.value;save()"><option value="">Pilih</option><option ${S.f.jk=="Laki-laki"?"selected":""}>Laki-laki</option><option ${S.f.jk=="Perempuan"?"selected":""}>Perempuan</option></select></label>
+${ta("kel","Keluhan utama","mis. nyeri perut sejak 2 hari, demam")}
+<div class="g2">${inp("td","TD (mmHg)","text","120/80")}${inp("n","Nadi (x/mnt)","number")}${inp("rr","RR (x/mnt)","number")}${inp("sh","Suhu (°C)","number")}${inp("sp","SpO₂ (%)","number")}</div>
+${ta("sub","Data subjektif","mis. pasien mengeluh lemas, sulit tidur, cemas")}
+${ta("obj","Data objektif","mis. tampak meringis, gelisah, turgor kulit menurun")}</div>`}
+const sgs=a=>a.map(s=>`<label class="ck"><input type="checkbox" value="${esc(s)}" ${S.sg.includes(s)?"checked":""} onchange="tg('sg',this.value);up()"> ${s}</label>`).join("");
+const up=()=>{const e=$("#pes");if(e)e.textContent=pes()};
+function tg(k,v){const a=S[k],i=a.indexOf(v);i<0?a.push(v):a.splice(i,1);save()}
+function pick(i){const d=D[i],b=blob();S.dx=i;S.et="";S.sg=[...d.mj,...d.mn].filter(s=>stems(s).some(w=>b.has(w)));S.ou=d.sl[2].map((_,j)=>""+j);S.iv=[];d.si.forEach((x,a)=>x[2].forEach((_,j)=>S.iv.push(a+"-"+j)));S.so={};render(1)}
+function v1(){let h=`<div class="card"><h2>Rekomendasi Diagnosa (SDKI)</h2><p class="mu">Diurutkan menurut kecocokan data pengkajian dengan tanda mayor dan minor. Pilih satu diagnosa.</p>`;
+rank().forEach(x=>{const d=D[x.i];h+=`<div class="dx ${S.dx==x.i?"sel":""}" onclick="pick(${x.i})"><div><b>${d.n}</b><small>${d.c}, ${d.k}<br>NANDA-I: ${d.nd}</small></div><div class="pc"><span>${x.p}%</span><i style="width:${x.p}%"></i></div></div>`});
+h+="</div>";
+if(S.dx>=0){const d=D[S.dx];
+h+=`<div class="card"><h3>${d.n}</h3>`+(d.e.length?`<p class="lb">Berhubungan dengan (etiologi)</p>`+d.e.map(e=>`<label class="ck"><input type="radio" name="et" value="${esc(e)}" ${S.et==e?"checked":""} onchange="S.et=this.value;save();up()"> ${e}</label>`).join(""):"")
++`<p class="lb">${d.r?"Faktor risiko":"Tanda dan gejala mayor"} (centang yang ditemukan)</p>`+sgs(d.mj)+(d.mn.length?`<p class="lb">Tanda dan gejala minor</p>`+sgs(d.mn):"")
++`<p class="lb">Rumusan diagnosa</p><div class="pes" id="pes">${esc(pes())}</div></div>`}
+return h}
+function v2(){const d=D[S.dx],x=d.sl;return `<div class="card"><h2>Luaran (SLKI)</h2><p><b>${x[1]}</b> <code>${x[0]}</code></p><p class="lb">Kriteria hasil yang dijadikan target</p>`+x[2].map((c,j)=>`<label class="ck"><input type="checkbox" value="${j}" ${S.ou.includes(""+j)?"checked":""} onchange="tg('ou',this.value)"> ${c}</label>`).join("")+`<p class="mu" style="margin-top:12px">Evaluasi target dan aktual memakai skala 1 sampai 5 sesuai definisi SLKI.</p></div>`}
+function v3(){const d=D[S.dx];return `<div class="card"><h2>Intervensi (SIKI)</h2>`+d.si.map((x,a)=>`<h3>${x[1]} <code>${x[0]}</code></h3>`+x[2].map((t,j)=>`<label class="ck"><input type="checkbox" value="${a}-${j}" ${S.iv.includes(a+"-"+j)?"checked":""} onchange="tg('iv',this.value)"> ${t}</label>`).join("")).join("")+`</div>`}
+const ivl=a=>S.iv.filter(v=>v.startsWith(a+"-")).map(v=>D[S.dx].si[a][2][v.split("-")[1]]);
+function mk(){const f=S.f,d=D[S.dx];
+S.so={s:`Pasien ${f.ini||""}${f.usia?`, ${f.usia} tahun,`:""} mengeluh ${f.kel||"…"}. ${f.sub||""}`.trim(),
+o:`TTV: TD ${f.td||"-"} mmHg, N ${f.n||"-"} x/mnt, RR ${f.rr||"-"} x/mnt, suhu ${f.sh||"-"} °C, SpO₂ ${f.sp||"-"}%. ${f.obj||""}`.trim(),
+a:`${pes()} (SDKI ${d.c}). Luaran: ${d.sl[1]} (${d.sl[0]}), target ${S.ou.map(j=>d.sl[2][j].toLowerCase()).join("; ")}.`,
+p:d.si.map((x,a)=>`${x[1]} (${x[0]}): ${ivl(a).join("; ")}`).join("\n")}}
+function v4(){const so=S.so,t=(k,l)=>`<label>${l}<textarea rows="4" oninput="S.so.${k}=this.value;save()">${esc(so[k])}</textarea></label>`;
+return `<div class="card"><h2>Catatan SOAP</h2><p class="mu">Disusun otomatis dari data Anda. Edit sesuai kondisi pasien, lalu tambahkan evaluasi per shift pada kolom Planning.</p>${t("s","S (Subjective)")}${t("o","O (Objective)")}${t("a","A (Assessment)")}${t("p","P (Planning)")}<button class="g" onclick="mk();render(1)">Susun ulang dari data</button></div>`}
+function docT(){const f=S.f,d=D[S.dx];if(!d)return"";
+return [`ASUHAN KEPERAWATAN (${BRAND.initials})`,`Pasien: ${f.ini||"-"}, ${f.usia||"-"} tahun, ${f.jk||"-"}`,"",`DIAGNOSA (SDKI ${d.c}; NANDA-I ${d.nd})`,pes(),"",`LUARAN (SLKI ${d.sl[0]} ${d.sl[1]})`,...S.ou.map(j=>"- "+d.sl[2][j]),"","INTERVENSI (SIKI)",...d.si.flatMap((x,a)=>[x[1]+" ("+x[0]+")",...ivl(a).map(t=>"- "+t)]),"","SOAP","S: "+S.so.s,"O: "+S.so.o,"A: "+S.so.a,"P: "+S.so.p,"",`Dibuat dengan aplikasi ${BRAND.initials}. Alat bantu belajar dan dokumentasi; keputusan klinis oleh perawat berwenang.`].join("\n")}
+function v5(){return `<div class="card"><h2>Ekspor</h2><pre>${esc(docT())}</pre></div><div class="btns no"><button onclick="cp(this)">Salin teks</button><button onclick="window.print()">Cetak atau simpan PDF</button><button class="g" onclick="clr()">Hapus semua data</button></div>`}
+function cp(b){try{navigator.clipboard.writeText(docT()).then(()=>b.textContent="Tersalin",()=>b.textContent="Gagal menyalin")}catch(e){b.textContent="Gagal menyalin"}}
+function clr(){if(confirm("Hapus semua data kasus ini?")){try{localStorage.removeItem("askep_ldp")}catch(e){}S={step:0,f:{},dx:-1,sg:[],et:"",ou:[],iv:[],so:{}};render()}}
+function go(n){if(n>1&&S.dx<0){alert("Pilih satu diagnosa terlebih dahulu.");n=1}if(n==4&&!S.so.s)mk();S.step=n;render()}
+function render(k){$("#nav").innerHTML=ST.map((t,i)=>`<button class="${i==S.step?"on":i<S.step?"dn":""}" onclick="go(${i})"><i>${i+1}</i><span>${t}</span></button>`).join("");
+$("#main").innerHTML=[v0,v1,v2,v3,v4,v5][S.step]()+(S.step<5?`<div class="btns no">${S.step?`<button class="g" onclick="go(S.step-1)">Sebelumnya</button>`:"<span></span>"}<button onclick="go(S.step+1)">Lanjut</button></div>`:`<div class="btns no"><button class="g" onclick="go(4)">Sebelumnya</button><span></span></div>`);
+save();if(!k)scrollTo(0,0)}
+function th(){const r=document.documentElement,d=r.dataset.theme?r.dataset.theme=="dark":matchMedia("(prefers-color-scheme:dark)").matches;r.dataset.theme=d?"light":"dark"}
+$("#lg").innerHTML=LOGO;$("#lg2").innerHTML=LOGO.replace('id="g"','id="g2"').replace("url(#g)","url(#g2)");
+$("#ft").innerHTML=`© ${new Date().getFullYear()} ${esc(BRAND.fullName||BRAND.initials)}${BRAND.institution?", "+esc(BRAND.institution):""}. Dibuat oleh ${BRAND.initials}.<br>Alat bantu belajar dan dokumentasi, bukan pengganti penilaian klinis. Verifikasi kode dan isi dengan buku standar PPNI (SDKI, SLKI, SIKI) dan NANDA-I.`;
+try{const v=localStorage.getItem("askep_ldp");if(v)S=Object.assign(S,JSON.parse(v))}catch(e){}
+if(S.step>1&&S.dx<0)S.step=1;
+render(1);
+setTimeout(()=>{const s=$("#sp");s.style.opacity=0;setTimeout(()=>s.remove(),500)},1900);
+</script></body></html>
